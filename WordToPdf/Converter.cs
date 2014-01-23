@@ -5,6 +5,7 @@ namespace WordToPdf
 {
     internal class Converter
     {
+
         private readonly string _outputFile;
         private object _inputFile;
 
