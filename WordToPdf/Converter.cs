@@ -3,7 +3,7 @@ using Microsoft.Office.Interop.Word;
 
 namespace WordToPdf
 {
-    internal class Converter
+    public class Converter
     {
 
         private readonly string _outputFile;
@@ -58,7 +58,7 @@ namespace WordToPdf
                                                  WdExportOptimizeFor.wdExportOptimizeForPrint,
                                                  WdExportRange.wdExportAllDocument, 0, 0,
                                                  WdExportItem.wdExportDocumentContent, true, true,
-                                                 WdExportCreateBookmarks.wdExportCreateWordBookmarks, true, true, false,
+                                                 WdExportCreateBookmarks.wdExportCreateHeadingBookmarks, true, true, false,
                                                  ref missing);
                 }
 
